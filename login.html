@@ -2,9 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Access Guide</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"> <!-- Link para o style.css -->
-	<link rel="stylesheet" href="/vendor/w3css/w3.css" type="text/css"> <!-- Link para o W3.css -->
+	<link rel="stylesheet" href="vendor/w3css/w3.css" type="text/css"> <!-- Link para o W3.css -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -26,13 +27,16 @@
                     <input type="submit">
                 </div>
                 <ul>
-                    <li><a href="/recuperarsenha.html" class="recsenha" onclick="showForgotPassword()">Esqueceu sua Senha?</a>
+                    <li><a href="recuperarsenha.html" class="recsenha" onclick="showForgotPassword()">Esqueceu sua Senha?</a>
                     </li>
                 </ul>
-                <span href="/cadastro.html" class="signup" onclick="showSignup()">Não é Cadastrado? Cadastre-se</span>
+                <span href="cadastro.html" class="signup" onclick="showSignup()">Não é Cadastrado? Cadastre-se</span>
             </form>
         </div>
     </div>
-</body>
 
+    <script src="assets/js/funcoes.js"></script>
+	<script src="assets/js/requisicao.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
 </html>
