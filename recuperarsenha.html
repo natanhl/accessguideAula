@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Access Guide</title>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css"> <!-- Link para o style.css -->
-	<link rel="stylesheet" href="vendor/w3css/w3.css" type="text/css"> <!-- Link para o W3.css -->
-	<link href="vendor/fontawesome/5.8.1/css/all.css" rel="stylesheet">
-</head>
-
+<title>RecuperarSenha</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
-    <div class="face face">
-        <div class="content">
-            <h2>Esqueceu sua Senha?</h2>
-            <small>Digite seu email para recuperar sua senha</small>
-            <form onsubmit="event.preventDefault()">
-                <div class="field-wrapper">
-                    <input type="text" name="email" placeholder="email">
-                    <label>E-mail</label>
-                </div>
-                <div class="field-wrapper">
-                    <input type="submit">
-                </div>
-            </form>
-        </div>
-    </div>
 
-    <script src="assets/js/funcoes.js"></script>
-	<script src="assets/js/requisicao.js"></script>
-	<script src="assets/js/script.js"></script>
+<div class="w3-container">
+    <div class="w3-text-indigo">
+        <h3>Esqueceu sua Senha?</h3>
+    </div>      
+    	
+       <div class="w3-small ">
+    	<p>Digite seu e-mail para recuperar sua senha</p>
+    </div>    
+        
+      <form class="w3-container">
+        <div class="w3-section">
+      
+          <input class="w3-input w3-margin-bottom" type="text" placeholder="Email" required>
+          <button class="w3-button w3-block w3-indigo w3-section w3-padding" type="submit">Enviar</button>
+        
+        </div>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+            
 </body>
 </html>

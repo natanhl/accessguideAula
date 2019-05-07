@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Access Guide</title>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css"> <!-- Link para o style.css -->
-	<link rel="stylesheet" href="vendor/w3css/w3.css" type="text/css"> <!-- Link para o W3.css -->
-	<link href="vendor/fontawesome/5.8.1/css/all.css" rel="stylesheet">
-</head>
-
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
-    <div class="face face-front">
-        <div class="content">
-            <h2>Faça seu Login</h2>
-            <form onsubmit="event.preventDefault()">
-                <div class="field-wrapper">
-                    <input type="text" name="email" placeholder="email">
-                    <label>E-mail</label>
-                </div>
-                <div class="field-wrapper">
-                    <input type="password" name="password" placeholder="password" autocomplete="new-password">
-                    <label>Senha</label>
-                </div>
-                <div class="field-wrapper">
-                    <input type="submit">
-                </div>
-                <ul>
-                    <li><a href="recuperarsenha.html" class="recsenha" onclick="showForgotPassword()">Esqueceu sua Senha?</a>
-                    </li>
-                </ul>
-                <span href="cadastro.html" class="signup" onclick="showSignup()">Não é Cadastrado? Cadastre-se</span>
-            </form>
-        </div>
-    </div>
 
-    <script src="assets/js/funcoes.js"></script>
-	<script src="assets/js/requisicao.js"></script>
-	<script src="assets/js/script.js"></script>
+<div class="w3-container">
+
+    <div class="w3-text-indigo">
+        <h2>Faça seu Login</h2>
+    </div>      
+    
+      <form class="w3-container">
+        <div class="w3-section">
+        
+          <input class="w3-input w3-margin-bottom" type="text" placeholder="Email" name="usrname" required>
+          <input class="w3-input" type="text" placeholder="Senha" name="psw" required>
+          <button class="w3-button w3-block w3-indigo w3-section w3-padding" type="submit">Login</button>
+        
+        </div>
+      </form>
+      
+        <p class=" w3-margin w3-small w3-center"><a href="recuperarsenha.html">Esqueceu sua senha?</a></p>
+        
+        <p class="w3-padding w3-small w3-center "><a href="#">Não é Cadastrado?  Cadastre-se</a></p>
+      
+      </div>
+    </div>
+  </div>
+</div>
+            
 </body>
+
+
 </html>

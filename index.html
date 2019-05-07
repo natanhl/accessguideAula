@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Access Guide</title>
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css"> <!-- Link para o style.css -->
-	<link rel="stylesheet" href="vendor/w3css/w3.css" type="text/css"> <!-- Link para o W3.css -->
-	<link href="vendor/fontawesome/5.8.1/css/all.css" rel="stylesheet">
-</head>
+<title>Index</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+</style>
 <body>
-	<div id="sidebar" >
-		<!-- Barra Lateral -->
-		<ul>
-			<li><a href="login.html">Login</a></li> <!-- Linkar login -->
-		</ul>
-		<div id="sidebar-btn" >
-			<!-- Botão da Barra Lateral -->
-			<i class="fas fa-bars"></i>
-			<!--Ícone barras FontAwesome -->
-		</div>
-	</div>
-	<div class="w3-container w3-center">
-			<i class="fab fa-accessible-icon"></i>
-	</div>
 
-	<script src="vendor/jquery/3.4.0/jquery-3.4.0.min.js.js"></script> <!-- Linkar jquery -->
-	<script src="assets/js/funcoes.js"></script>
-	<script src="assets/js/requisicao.js"></script>
-	<script src="assets/js/script.js"></script>
-	<script>
-			$(document).ready(function () {
-				$('#sidebar-btn').click(function () {
-					$('#sidebar').toggleClass('visible')
-				})
-			})
-	</script>
-	<!-- Script para função apertar botão -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-border-bottom w3-large"></a>
+  <a class="w3-bar-item w3-button" href="login.html">Login</a>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button  w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+</div>
+</div>
+<script>
+
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
 </body>
-</html>
+</html> 
