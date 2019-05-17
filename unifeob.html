@@ -5,48 +5,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+crossorigin="anonymous">
 
 <header class="bgimg w3-display-container" id="fotoestabelecimento">
 
-        <div class="w3-display-container w3-center w3-section">
-                <img src="https://unifeob.edu.br/wp-content/themes/pulso-engine-branding/assets/img/video-01.jpg" style="width:100%; ">
-              </div> 
-
-
+  <div class="w3-display-container w3-center w3-section">
+    <img src="https://unifeob.edu.br/wp-content/themes/pulso-engine-branding/assets/img/video-01.jpg"
+      style="width:100%; ">
+  </div>
 
 </header>
 
 <body>
-    
-    <div class="w3-container w3-xlarge">
 
-        <div class="w3-left w3-text-indigo">
-               <span class="w3-xxlarge"> Unifeob </span><br>
-                Universidade
+  <div class="w3-container w3-xlarge">
+
+    <div class="w3-left w3-text-indigo">
+      <span class="w3-xxlarge"> Unifeob </span><br>
+      Universidade
+    </div>
+
+    <div class="w3-button w3-right w3-small w3-round-large w3-indigo w3-margin">
+      <button onclick="document.getElementById('id01').style.display='block' "
+        class="w3-button w3-right w3-small">Horário
+      </button>
+
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'"
+              class="w3-button w3-display-topright">&times;
+            </span>
+
+            <p>terça-feira 08:00–23:00</p>
+            <p>quarta-feira 08:00–23:00</p>
+            <p>quinta-feira 08:00–23:00</p>
+            <p>sexta-feira 08:00–23:00</p>
+            <p>sábado Fechado</p>
+            <p>domingo Fechado</p>
+            <p>segunda-feira 08:00–23:00</p>
+
+          </div>
         </div>
-
-       <div class="w3-button w3-right w3-small w3-round-large w3-indigo w3-margin">
-        <button onclick="document.getElementById('id01').style.display='block' "class="w3-button w3-right w3-small">Horário</button>
-
-    <div id="id01" class="w3-modal">
-    <div class="w3-modal-content">
-      <div class="w3-container">
-        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-        <p>terça-feira	08:00–23:00</p>
-        <p>quarta-feira	08:00–23:00</p>
-        <p>quinta-feira	08:00–23:00</p>
-        <p>sexta-feira	08:00–23:00</p>
-        <p>sábado	Fechado</p>
-        <p>domingo	Fechado</p>
-        <p>segunda-feira	08:00–23:00</p>
-
       </div>
     </div>
   </div>
-
-    </div>
-
+  <div class="w3-container w3-section w3-xxlarge">
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+  </div>
+  
 
 </body>
-
 </html>
