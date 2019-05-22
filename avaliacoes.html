@@ -11,7 +11,7 @@
     <div class="w3-container">
 
         <div class="w3-text-indigo w3-center">
-            <h2>Avaliações</h2>
+            <h2>.</h2>
         </div>
 
         <div class="w3-row w3-section w3-container w3-border w3-hover-border-indigo">
@@ -86,6 +86,31 @@
             </div>
         </div>
     </div>
+
+    <div class="w3-main" style="margin-left:250px;">
+
+        <div id="myTop" class="w3-container w3-top w3-theme w3-tiny"style="background-color:#5DBCD2">
+          
+          <p><i class="fa fa-bars w3-button w3-hide-large w3-xlarge w3-text-white" onclick="w3_open()"></i>
+            <input type="text" class="w3-medium" placeholder="Digite aqui.">
+            <i class="fas fa-sign-out-alt w3-button w3-hide-large w3-xlarge w3-text-white" ></i>
+        </div>
+    
+      </div>
+      <script>
+    
+        // Open and close the sidebar on medium and small screens
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+        }
+    
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+        }
+    
+      </script>
 
 </body>
 
