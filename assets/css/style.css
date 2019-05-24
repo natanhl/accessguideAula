@@ -196,4 +196,13 @@ ul li a{
   
   small {
 	font-size: 0.7em;
-  }
+	}
+
+	.titulo_nav{
+		margin: 0;
+		padding: 0 !important;
+	}
+	.titulo_nav h1{
+		margin-top: 5px;
+		font-size: 20px;
+	}
