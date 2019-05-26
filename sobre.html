@@ -2,36 +2,112 @@
 <html>
 <title>Sobre</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 <body>
 
-    <div class="w3-container">
+    <nav class="w3-border w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-text-white w3-light-blue"
+        style="z-index:3;width:80%;" id="mySidebar">
+        <a class="w3-bar-item w3-button w3-large"></a>
 
-        <div class="w3-margin-top w3-text-light-blue w3-center w3-xlarge">
-            <b>Access Guide</b>
+        <div id="visitante" class="w3-row w3-container w3-border-bottom ">
+
+            <i class="fas w3-jumbo w3-left fa-user-circle"></i>
+            <b>&ensp; Modo Visitante<p></b>
+            &ensp; <a href="login.html">Entre</a> ou <a href="cadastro.html">Cadastre-se</a>
+            <p>
+
         </div>
+
+        <div id="logado" class="w3-row w3-container w3-border-bottom">
+
+            <i class="fas w3-jumbo w3-left fa-user-circle"></i>
+            <b class="w3-medium">&ensp; Natan<p></b>
+            <b class="w3-tiny">&ensp; natan.lima@sou.unifeob.edu.br</b>
+            <p>
+
+        </div>
+
+        <br><a class="w3-bar-item w3-button w3-large" href="index.html"><i class="fas fa-street-view"></i> Minha
+            Localização </a>
+
+        <a id="avaliacoes" class="w3-bar-item w3-button w3-large" href="minhasavaliacoes.html"><i
+                class="fas fa-thumbs-up"></i> Minhas
+            Avaliações </a>
+
+        <a id="buscaAvancada" class="w3-bar-item w3-button w3-large" href="index.html"><i
+                class="fas fa-search-plus"></i> Busca
+            Avançada
+        </a>
+
+        <a class="w3-bar-item w3-button w3-large" href="contato.html"><i class="fas fa-address-book"></i> Contato</a>
+
+        <a class="w3-bar-item w3-button w3-large" href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a>
+
+    </nav>
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
+    </div>
+
+    <div id="myTop" class="w3-bar w3-padding w3-light-blue w3-large">
+
+        <div class="w3-bar-item w3-button w3-hover-light-blue w3-text-white w3-left" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <div id="logout" class=" w3-bar-item w3-button w3-right w3-hover-light-blue w3-text-white">
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+
+        <div class="w3-text-white titulo_nav w3-center">
+            <h1>Access Guide</h1>
+        </div>
+
+    </div>
+
+    <script>
+        // Open and close the sidebar on medium and small screens
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+</body>
+
+<body>
+
+    <div class="w3-container">
 
         <form class="w3-container">
 
-            <div class="w3-button w3-center w3-large w3-round-large w3-light-blue w3-margin w3-text-white" style=" width:91%">
+            <div class="w3-button w3-center w3-large w3-round-large w3-light-blue w3-margin w3-text-white"
+                style=" width:91%">
                 <p><i class="fas fa-mobile"><a></i></a> <a> Versão do App</a> </p>
                 <h5>1.6969</h5>
             </div>
 
-            <div class="w3-button w3-center w3-large w3-round-large w3-light-blue w3-margin w3-text-white" style=" width:91%">
+            <div class="w3-button w3-center w3-large w3-round-large w3-light-blue w3-margin w3-text-white"
+                style=" width:91%">
                 <p><i class="fab fa-dev"></i><a></i></a> <a> Sobre o Desenvolvedor</a> </p>
                 <h5>Tecmil Teen</h5>
             </div>
 
-            <div class="w3-button w3-center w3-large w3-round-large w3-light-blue w3-margin w3-text-white" style=" width:91%">
+            <div class="w3-button w3-center w3-large w3-round-large w3-light-blue w3-margin w3-text-white"
+                style=" width:91%">
                 <p><i class="fas fa-info-circle"><a></i></a> <a> Sobre o App</a></p>
                 <h5>Access Guide</h5>
             </div>
 
-            <div class="w3-button w3-center w3-large w3-round-large w3-light-blue w3-margin w3-text-white" style=" width:91%">
+            <div class="w3-button w3-center w3-large w3-round-large w3-light-blue w3-margin w3-text-white"
+                style=" width:91%">
                 <p><i class="fas fa-id-badge"><a></i></a> <a> Licenças</a> </p>
                 <h5>Open Source</h5>
             </div>
