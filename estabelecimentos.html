@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html>
 <title>Estabelecimento</title>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+<body>
+
+    <nav class="w3-border w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-text-white w3-light-blue"
+        style="z-index:3;width:80%;" id="mySidebar">
+        <a class="w3-bar-item w3-button w3-large"></a>
+
+        <div id="visitante" class="w3-row w3-container w3-border-bottom ">
+
+            <i class="fas w3-jumbo w3-left fa-user-circle"></i>
+            <b>&ensp; Modo Visitante<p></b>
+            &ensp; <a href="login.html">Entre</a> ou <a href="cadastro.html">Cadastre-se</a>
+            <p>
+
+        </div>
+
+        <div id="logado" class="w3-row w3-container w3-border-bottom">
+
+            <i class="fas w3-jumbo w3-left fa-user-circle"></i>
+            <b class="w3-medium">&ensp; Natan<p></b>
+            <b class="w3-tiny">&ensp; natan.lima@sou.unifeob.edu.br</b>
+            <p>
+
+        </div>
+
+        <br><a class="w3-bar-item w3-button w3-large" href="index.html"><i class="fas fa-street-view"></i> Minha
+            Localização </a>
+
+        <a id="avaliacoes" class="w3-bar-item w3-button w3-large" href="minhasavaliacoes.html"><i
+                class="fas fa-thumbs-up"></i> Minhas
+            Avaliações </a>
+
+        <a id="buscaAvancada" class="w3-bar-item w3-button w3-large" href="index.html"><i
+                class="fas fa-search-plus"></i> Busca
+            Avançada
+        </a>
+
+        <a class="w3-bar-item w3-button w3-large" href="contato.html"><i class="fas fa-address-book"></i> Contato</a>
+
+        <a class="w3-bar-item w3-button w3-large" href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a>
+
+    </nav>
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
+    </div>
+
+    <div id="myTop" class="w3-bar w3-padding w3-light-blue w3-large">
+
+        <div class="w3-bar-item w3-button w3-hover-light-blue w3-text-white w3-left" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <div id="logout" class=" w3-bar-item w3-button w3-right w3-hover-light-blue w3-text-white">
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+
+        <div class="w3-text-white titulo_nav w3-center">
+            <h1>Estabelecimento</h1>
+        </div>
+
+    </div>
+
+    <script>
+        // Open and close the sidebar on medium and small screens
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+</body>
+
 <header class="bgimg w3-display-container" id="fotoestabelecimento">
 
     <div class="w3-display-container w3-center w3-section">
-        <img src="https://unifeob.edu.br/wp-content/themes/pulso-engine-branding/assets/img/video-01.jpg" style="width:92%;">
+        <img src="https://unifeob.edu.br/wp-content/themes/pulso-engine-branding/assets/img/video-01.jpg"
+            style="width:92%;">
     </div>
 
 </header>
@@ -19,32 +95,32 @@
 
     <div class="w3-container w3-xlarge">
 
-        <div class="w3-left w3-text-indigo">
+        <div class="w3-left w3-text-light-blue">
 
             <b class="w3-xlarge "> Unifeob <br></b>
             <span class="w3-large">Universidade</span>
 
         </div>
 
-        <div class="w3-button w3-right w3-small w3-indigo w3-section w3-round">
-            <button onclick="document.getElementById('id01').style.display='block' "
+        <div class="w3-button w3-right w3-small w3-light-blue w3-section w3-round w3-text-white">
+            <button onclick="document.getElementById('horarios').style.display='block' "
                 class="w3-button w3-right w3-small">Horário
             </button>
 
-            <div id="id01" class="w3-modal">
+            <div id="horarios" class="w3-modal">
                 <div class="w3-modal-content">
                     <div class="w3-container">
-                        <span onclick="document.getElementById('id01').style.display='none'"
+                        <span onclick="document.getElementById('horarios').style.display='none'"
                             class="w3-button w3-display-topright">&times;
                         </span>
 
-                        <p>terça-feira    08:00–23:00</p>
-                        <p>quarta-feira   08:00–23:00</p>
-                        <p>quinta-feira   08:00–23:00</p>
-                        <p>sexta-feira    08:00–23:00</p>
-                        <p>sábado           Fechado</p>
-                        <p>domingo          Fechado</p>
-                        <p>segunda-feira  08:00–23:00</p>
+                        <p>terça-feira 08:00–23:00</p>
+                        <p>quarta-feira 08:00–23:00</p>
+                        <p>quinta-feira 08:00–23:00</p>
+                        <p>sexta-feira 08:00–23:00</p>
+                        <p>sábado Fechado</p>
+                        <p>domingo Fechado</p>
+                        <p>segunda-feira 08:00–23:00</p>
 
                     </div>
                 </div>
@@ -52,30 +128,28 @@
         </div>
     </div>
     <div class="w3-container w3-section w3-xxlarge">
-        <i class="far fa-star"></i>
-        <i class="far fa-star"></i>
-        <i class="far fa-star"></i>
-        <i class="far fa-star"></i>
-        <i class="far fa-star"></i>
+        <i id="estrela1" class="far fa-star"></i>
+        <i id="estrela2" class="far fa-star"></i>
+        <i id="estrela3" class="far fa-star"></i>
+        <i id="estrela4" class="far fa-star"></i>
+        <i id="estrela5" class="far fa-star"></i>
         <span class="w3-large">(10)</span>
     </div>
     <div class="w3-container w3-section w3-xxlarge">
-        <i class="s1 fas fa-wheelchair">&ensp;</i>
-        <i class="s10 fas fa-brain">&ensp;</i>
-        <i class="s1 fas fa-deaf">&ensp;</i>
-        <i class="s6 fas fa-blind">&ensp;</i>
-        <i class="s6 fas fa-american-sign-language-interpreting">&ensp;</i>
+        <i id="cadeiranteicon" class="s1 fas fa-wheelchair">&ensp;</i>
+        <i id="cerebroicon" class="s10 fas fa-brain">&ensp;</i>
+        <i id="ouvidoicon" class="s1 fas fa-deaf">&ensp;</i>
+        <i id="cegoitem" class="s6 fas fa-blind">&ensp;</i>
+        <i id="maosicon" class="s6 fas fa-american-sign-language-interpreting">&ensp;</i>
     </div>
     <div class="w3-container">
 
-        <a class="w3-button w3-block w3-indigo w3-section w3-padding w3-round-xxlarge" href="avaliacoes.html"
-            type="submit">Avaliações</a>
+        <a class="w3-button w3-block w3-light-blue w3-section w3-padding w3-round-xxlarge w3-text-white" href="avaliacoes.html"
+            type="submit">Avaliações
+        </a>
+        <a id="avaliar" class="w3-button w3-block w3-light-blue w3-section w3-padding w3-text-white" href="avaliarEstab.html" type="submit">Avaliar</a>
 
     </div>
-
-    
-
-
 
 </body>
 
